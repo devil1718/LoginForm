@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #24353F;">
+    <div class="container">
+        <div class="form">
+            <form class=" m-auto my-5 " action="">
+                <h1 style="color: #17A2B8; " class="text-center m-5 pt-3">Smart Login System</h1>
+                <input
+                  id="loginEmail"
+                  type="email"
+                  placeholder="Enter your email"
+                  class="form-control mt-3 rounded-1"
+                />
+                <input
+                  id="loginPassword"
+                  type="password"
+                  placeholder="Enter your password"
+                  class="form-control mt-3 rounded-1"
+                />
+                <p id="inncorrect" class="text-center text-danger mt-2 d-none">Invalid user name or password</p>
+                <div class="d-flex flex-column justify-content-center align-items-center gap-4">
+                  <button
+                  onclick="login()"
+                    type="button"
+                    id="loginBtn"
+                    class="btn btn-outline-primary form-control text-center rounded-1 my-4 px-5"
+                  >
+                    Login
+                  </button>
+                </div>
+                <p class="text-center text-danger fw-bold" id="syntax3"></p>
+                <p class="text-center text-white fw-bold">Don’t have an account? <a style="text-decoration: none; color: white;" href="index.html" target="_blank">Sign Up </a></p>
+              </form>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
